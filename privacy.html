@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101d22">
+  <meta name="description" content="HoveyBits — little games, just for fun.">
+  <title>HoveyBits | Little games. Just for fun.</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      font-family: system-ui, -apple-system, sans-serif;
+      background: #101d22;
+      color: #f1f8f6;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; line-height: 1.6; }
+    a { color: #8ce4d4; }
+    .container {
+      max-width: 760px;
+      margin: auto;
+      padding: 28px 22px;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 85px;
+    }
+    .logo {
+      width: 58px;
+      height: 58px;
+      display: grid;
+      place-items: center;
+      border-radius: 15px;
+      background: #16383d;
+      color: #8ce4d4;
+      font-size: 25px;
+      font-weight: 800;
+    }
+    .brand { font-size: 23px; font-weight: 800; }
+    .tagline, .muted { color: #91aaa9; }
+    .tagline { font-size: 13px; }
+    h1 {
+      font-size: clamp(32px, 6vw, 48px);
+      line-height: 1.15;
+      letter-spacing: -1.5px;
+      margin: 0 0 20px;
+    }
+    h2 { font-size: 23px; margin: 0 0 18px; }
+    p { color: #b6ccca; }
+    .intro { font-size: 18px; max-width: 600px; }
+    section { margin: 65px 0; }
+    .game-card {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      background: #1b3035;
+      border: 1px solid #30464b;
+      padding: 22px;
+      border-radius: 16px;
+    }
+    .game-icon {
+      width: 82px;
+      height: 82px;
+      flex-shrink: 0;
+      display: grid;
+      place-items: center;
+      border-radius: 15px;
+      background: #294a4c;
+      color: #8ce4d4;
+      font-size: 40px;
+    }
+    .game-card h3 { margin: 0; font-size: 21px; }
+    .game-card p { margin: 5px 0 10px; font-size: 14px; }
+    .pill {
+      display: inline-block;
+      color: #8ce4d4;
+      background: #294a4c;
+      padding: 4px 11px;
+      border-radius: 20px;
+      font-size: 12px;
+    }
+    .support {
+      text-align: center;
+      background: #16383d;
+      border-radius: 16px;
+      padding: 30px;
+    }
+    .button {
+      display: inline-block;
+      background: #267e82;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 10px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .button:hover { background: #32999d; }
+    footer {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding-top: 24px;
+      border-top: 1px solid #30464b;
+      color: #91aaa9;
+      font-size: 13px;
+    }
+    footer a { margin-right: 15px; }
+    @media (max-width: 480px) {
+      header { margin-bottom: 55px; }
+      .game-card { align-items: flex-start; }
+      .game-icon { width: 60px; height: 60px; font-size: 30px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <header>
+      <div class="logo">HB.</div>
+      <div>
+        <div class="brand">HoveyBits</div>
+        <div class="tagline">Little games. Just for fun.</div>
+      </div>
+    </header>
+
+    <main>
+      <h1>Games without<br>the nonsense.</h1>
+      <p class="intro">
+        Just a hobby developer making little games in his spare time.
+        No ads, no subscriptions, no interruptions.
+        Just something fun to play.
+      </p>
+
+      <section>
+        <h2>My Games</h2>
+        <div class="game-card">
+          <div class="game-icon">🀄</div>
+          <div>
+            <h3>Pocket Mahjong</h3>
+            <p>
+              Classic Mahjong Solitaire. Relax, match tiles,
+              and play at your own pace.
+            </p>
+            <span class="pill">Android · Free · No ads</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="support">
+        <h2>Enjoying the games?</h2>
+        <p>
+          Everything is free. If you'd like to support
+          more little projects, you can buy me a coffee!
+        </p>
+        <!-- Replace with your actual Buy Me a Coffee URL -->
+        <a class="button"
+           href="https://buymeacoffee.com/hoveybits"
+           target="_blank"
+           rel="noopener noreferrer">
+          ☕ Buy me a coffee
+        </a>
+        <p class="muted" style="font-size:13px">
+          Completely optional. Always appreciated.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <a href="privacy.html">Privacy Policy</a>
+        <!-- Replace with your public support email -->
+        <a href="mailto:YOUR_EMAIL@example.com">Contact</a>
+      </div>
+      <span>© 2026 HoveyBits</span>
+    </footer>
+
+  </div>
+</body>
+</html>
