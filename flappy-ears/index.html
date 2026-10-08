@@ -1,1 +1,19 @@
-
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+<meta name="theme-color" content="#152c31"><meta name="description" content="Flappy Ears — hop through a winding burrow! A free little browser game from HoveyBits.">
+<title>Flappy Ears | HoveyBits</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="shell">
+<header><a href="../" class="brand">← HoveyBits</a><span class="name">🐰 FLAPPY EARS</span><button id="sound" class="icon-btn" aria-label="Toggle sound" aria-pressed="true">♪ On</button></header>
+<div class="stage"><canvas id="game" aria-label="Flappy Ears game: tap, click, or press space to flap"></canvas>
+<div id="overlay" class="overlay"><div class="panel"><div class="mascot">🐰</div><h1 id="heading">Flappy Ears</h1><p id="message">Flap your ears to fly through the rabbit tunnel. Dodge the rocky walls and collect carrots!</p><div class="stats"><span>Best <strong id="best">0</strong></span><span>Carrots <strong id="carrots">0</strong></span></div><button id="play" class="primary">Start hopping!</button><small>Tap • Click • Space • ↑</small></div></div>
+<div class="hud"><div class="score"><span>BURROWS</span><strong id="score">0</strong></div><div class="carrot-count">🥕 <strong id="runCarrots">0</strong></div></div>
+</div>
+<footer><span>Tap or press Space to flap · P to pause</span><span>Made for fun by HoveyBits · No ads</span></footer>
+</main>
+<script src="game.js" defer></script>
+</body></html>
