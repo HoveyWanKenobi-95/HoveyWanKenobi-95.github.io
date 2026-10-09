@@ -3,3 +3,5 @@
 /* Respect the hidden attribute: otherwise fallback card art appears over PNGs. */
 .card .fallback[hidden]{display:none!important}
 .card img{object-fit:contain}
+
+/* Fallback is created only if the card image fails to load. */
