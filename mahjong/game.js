@@ -1,6 +1,6 @@
 'use strict';
 // Pocket Mahjong web port. Geometry and rules mirror the Kivy edition.
-const FACES=['1B','2B','3B','4B','5B','6B','7B','8B','9B','1D','2D','3D','4D','5D','6D','7D','8D','9D','1C','2C','3C','4C','5C','6C','7C','8C','9C','E','S','W','N','R','G','Wh','Fl','Se'];
+const FACES=['1B','1C','1D','2B','2C','2D','3B','3C','3D','4B','4C','4D','5B','5C','5D','6B','6C','6D','7B','7C','7D','8B','8C','8D','9B','9C','9D','Au','Bm','Ch','E','G','N','Or','Pl','R','S','Sp','Su','W','Wh','Wi'];
 const pos=(x,y,z)=>({x,y,z,id:`${x},${y},${z}`});
 function layer(w,h,z,x=0,y=0){return Array.from({length:w*h},(_,i)=>pos(x+2*(i%w),y+2*Math.floor(i/w),z));}
 const LAYOUTS={
